@@ -3,6 +3,7 @@ from food import Food
 from scoreboard import Scoreboard
 import time
 from snake import Snake
+from border import Border
 
 screen = Screen()
 screen.bgcolor('black')
@@ -13,6 +14,8 @@ screen.tracer(0)
 snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
+border = Border()
+border.move()
 
 screen.listen()
 screen.onkey(snake.up,'Up')
